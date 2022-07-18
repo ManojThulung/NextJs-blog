@@ -13,7 +13,7 @@ function MainNavigation() {
       <nav>
         <ul>
           <li>
-            <Link href="/post">Post</Link>
+            <Link href="/posts">Post</Link>
           </li>
           <li>
             <Link href="/contact">Contact</Link>
