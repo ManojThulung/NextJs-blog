@@ -7,7 +7,7 @@ class MyDocument extends Document {
         <Head />
         <body>
           <Main />
-          <NextScript />
+          <NextScript /> {/*includes all the nextjs codes*/}
           <div id="notification"></div>
         </body>
       </Html>
