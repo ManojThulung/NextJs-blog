@@ -1,10 +1,15 @@
 import { Fragment } from "react";
+import Head from "next/head";
 import PostContent from "../../components/post/post-details/post-content";
 import { getAllPostFiles, getPostData } from "../../lib/posts-util";
 
 function PostPage(props) {
   return (
     <Fragment>
+      <Head>
+        <title>{props.postData.title}</title>
+        <meta name="description" content={props.postData.excerpt} />
+      </Head>
       <PostContent post={props.postData} />
     </Fragment>
   );

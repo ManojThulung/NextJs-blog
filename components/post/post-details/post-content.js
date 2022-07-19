@@ -36,7 +36,6 @@ function PostContent(props) {
     },
 
     code(code) {
-      console.log(code);
       const { className, children } = code;
       const language = className.split("-")[1]; // className is something like language-js => We need the "js" part here
       return (
