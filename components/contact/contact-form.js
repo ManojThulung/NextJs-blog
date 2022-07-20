@@ -48,6 +48,9 @@ function ContactForm() {
         message: enteredMessage,
       });
       setRequestStatus("success");
+      setEnteredEmail("");
+      setEnteredName("");
+      setEnteredMessage("");
     } catch (error) {
       setErrorMessage(error.message);
       setRequestStatus("error");
